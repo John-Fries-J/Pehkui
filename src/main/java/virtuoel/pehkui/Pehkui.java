@@ -15,7 +15,6 @@ import virtuoel.pehkui.api.PehkuiConfig;
 import virtuoel.pehkui.api.ScaleOperations;
 import virtuoel.pehkui.api.ScaleTypes;
 import virtuoel.pehkui.command.PehkuiEntitySelectorOptions;
-import virtuoel.pehkui.network.PehkuiPacketHandler;
 import virtuoel.pehkui.util.CommandUtils;
 import virtuoel.pehkui.util.GravityChangerCompatibility;
 import virtuoel.pehkui.util.IdentityCompatibility;
@@ -47,8 +46,6 @@ public class Pehkui
 		CommandUtils.registerArgumentTypes();
 		
 		PehkuiEntitySelectorOptions.register();
-		
-		PehkuiPacketHandler.init();
 		
 		GravityChangerCompatibility.INSTANCE.getClass();
 		IdentityCompatibility.INSTANCE.getClass();
